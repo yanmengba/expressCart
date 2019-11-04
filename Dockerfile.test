@@ -26,7 +26,7 @@ RUN chgrp -R 0 /var/expressCart && chmod -R g+rw /var/expressCart
 
 #set test environment
 COPY testing.sh /var/expressCart/
-RUN chmod g+X testing.sh && mkdir /tmp/testing && chgrp -R 0 /tmp/testing && chmod -R g+rw /tmp/testing
+RUN chmod g+x testing.sh && mkdir /tmp/testing && chgrp -R 0 /tmp/testing && chmod -R g+rw /tmp/testing
 
 EXPOSE 1111
 ENTRYPOINT ["testing.sh"]
