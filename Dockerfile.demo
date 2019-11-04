@@ -21,5 +21,8 @@ RUN npm install
 
 VOLUME /var/expressCart/data
 
+# allow non-root k8s config settings
+RUN chgrp -R 0 /var/expressCart/config && chmod -R g+rw /var/expressCart/config
+
 EXPOSE 1111
 ENTRYPOINT ["npm", "run", "demo"]
