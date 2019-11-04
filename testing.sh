@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if [ -d "/seeker" ] 
 then
 	cd /tmp/testing
