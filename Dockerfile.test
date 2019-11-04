@@ -29,4 +29,4 @@ COPY testing.sh /var/expressCart/
 RUN chmod g+x testing.sh && mkdir /tmp/testing && chgrp -R 0 /tmp/testing && chmod -R g+rw /tmp/testing
 
 EXPOSE 1111
-ENTRYPOINT ["testing.sh"]
+ENTRYPOINT ["./testing.sh"]
