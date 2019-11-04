@@ -21,7 +21,7 @@
     "customCss": ".footer{padding-top: 5px;}",
     "currencySymbol": "£",
     "paymentGateway": "stripe",
-    "databaseConnectionString": "mongodb://expresscarrt-mongodb.mongo.svc:27017/expresscart",
+    "databaseConnectionString": "mongodb://user:Passw0rd!@expresscart-app.mongo.svc:27017/cart",
     "theme": "Cloth",
     "trackStock": false,
     "orderHook": ""
