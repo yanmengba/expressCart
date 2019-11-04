@@ -23,6 +23,7 @@ VOLUME /var/expressCart/data
 
 # allow non-root k8s config settings
 RUN chgrp -R 0 /var/expressCart && chmod -R g+rw /var/expressCart
+RUN mkdir /.npm && chgrp -R 0 /.npm && chmod -R g+rw /.npm
 
 #set test environment
 COPY testing.sh /var/expressCart/
