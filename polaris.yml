@@ -14,4 +14,6 @@ capture:
     buildless:
       project:
         languages:
-          - "javascript"   
+          - "javascript"
+        excludes:
+          - ./node_modules
