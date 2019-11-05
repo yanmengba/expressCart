@@ -5,6 +5,7 @@
   "private": false,
   "scripts": {
     "demo": "npm run testdata && npm run start",
+    "testing": "npm run testdata && node app.js --require ./node_modules/@synopsys-sig/seeker",
     "start": "node app.js",
     "deploy": "gulp deploy",
     "testdata": "node lib/testdata.js",
