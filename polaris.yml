@@ -22,4 +22,4 @@ capture:
     javascript:
       files:
       - directory: ${project.projectDir}
-      - excludeRegex: "[/\\]node_modules[/]"
+      - excludeRegex: "[/\\]node_modules[/\\]"
