@@ -16,4 +16,4 @@ capture:
         languages:
           - "javascript"
         excludes:
-          - ./node_modules
+          - ./node_modules/*
