@@ -11,7 +11,7 @@ then
 	npm install --prefix ./ /tmp/testing/package/*.tgz 
 	env | grep SEEK
 	npm run testdata
-	node app.js --require ./node_modules/@synopsys-sig/seeker
+	node --require ./node_modules/@synopsys-sig/seeker app.js
 else
 	npm run demo
 fi
