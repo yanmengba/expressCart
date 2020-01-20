@@ -4,12 +4,13 @@ set +x
 
 if [ -d "/seeker" ] 
 then
-	cd /tmp/testing
-	tar -xvf /seeker/seeker-agent.tgz
-	cd /var/expressCart/
+	mkdir /tmp/seeker
+	cp /seeker/seeker-agent.tgz /tmp/seeker
+	
 	echo "Install sensor"
-	npm install --prefix ./ /tmp/testing/package/
+	npm install /tmp/seeker/seeker-agent.tgz --save --prefix seeker
 	env | grep SEEK
+	
 	npm run testdata
 	node --require ./node_modules/@synopsys-sig/seeker app.js
 else
