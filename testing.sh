@@ -8,7 +8,7 @@ then
 	tar -xvf /seeker/seeker-agent.tgz
 	cd /var/expressCart/
 	echo "Install sensor"
-	npm install --prefix ./ /tmp/testing/package/*.tgz 
+	npm install --prefix ./ /tmp/testing/package/
 	env | grep SEEK
 	npm run testdata
 	node --require ./node_modules/@synopsys-sig/seeker app.js
