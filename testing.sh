@@ -13,7 +13,7 @@ then
 	cd /var/expressCart
 	
 	npm run testdata
-	node --require ./node_modules/@synopsys-sig/seeker app.js
+	node --require ./seeker/node_modules/@synopsys-sig/seeker app.js
 else
 	npm run demo
 fi
