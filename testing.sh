@@ -10,6 +10,7 @@ then
 	echo "Install sensor"
 	npm install /tmp/seeker/seeker-agent.tgz --save --prefix seeker
 	env | grep SEEK
+	cd /var/expressCart
 	
 	npm run testdata
 	node --require ./node_modules/@synopsys-sig/seeker app.js
