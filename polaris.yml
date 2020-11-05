@@ -1,10 +1,10 @@
 version: "1"
-serverUrl: https://sipse.polaris.synopsys.com
+serverUrl: https://sipse.polaris.synopsys.com 
 install:
   coverity:
-    version: latest
+    version: "2020.09" 
 project:
-  name: "SIG Employee Store - SSDC"
+  name: "YBAtest_expressCart"
   branch: ${scm.git.branch}
   revision:
     name: ${scm.git.commit}
