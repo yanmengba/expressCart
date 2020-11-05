@@ -1,7 +1,5 @@
 version: "1"
-serverUrl: https://sipse.polaris.synopsys.com 
-
-
+serverUrl: https://sipse.polaris.synopsys.com
 
 install:
   coverity:
