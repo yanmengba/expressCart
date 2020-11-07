@@ -2,7 +2,7 @@ version: "1"
 serverUrl: https://sipse.polaris.synopsys.com
 install:
   coverity:
-    version: "2020.09" 
+    version: default 
 project:
   name: "YBAtest_expressCart"
   branch: ${scm.git.branch}
